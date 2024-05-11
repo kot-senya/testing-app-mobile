@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Testing_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#fef6ff</item>
+        <item name="fontFamily">@font/comic_sans_ms</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.Testing_app" parent="Base.Theme.Testing_app" />
+
+    <style name="checkBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="radioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <color name="color_primary">#3F51B5</color>
+    <color name="color_primary_enable">#503F51B5</color>
+    <color name="color_background">#fef6ff</color>
+</resources>
