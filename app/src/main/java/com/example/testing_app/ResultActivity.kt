@@ -34,10 +34,12 @@ class ResultActivity : AppCompatActivity() {
         val countPositive = Data.questions.filter { it.correctlyAnswer }.size
         val procentPositive = round(countPositive.toDouble()/Data.count.toDouble() * 10000) / 100
         var result = ""
+        
         if (countPositive >= Data.appSetting.raiting5) result = "Оценка 5"
-        if (countPositive >= Data.appSetting.raiting4) result = "Оценка 4"
-        if (countPositive >= Data.appSetting.raiting3) result = "Оценка 3"
+        else if (countPositive >= Data.appSetting.raiting4) result = "Оценка 4"
+        else if (countPositive >= Data.appSetting.raiting3) result = "Оценка 3"
         else result = "Незачет"
+
         var hintLine = ""
         if(!Data.appSetting.hint_visibility) hintLine = "Подсказки отключены"
         else  hintLine = "Кол-во используемых подсказок: ${Data.appSetting.user_count_hint} из ${Data.appSetting.count_of_hints}"

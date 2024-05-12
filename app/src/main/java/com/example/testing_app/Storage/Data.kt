@@ -51,6 +51,7 @@ object Data {
                 questions = result.take(count).toMutableList()
             }
 
+            numerics = mutableListOf()
             for (i in 1..count)
                 numerics.add(i)
 
